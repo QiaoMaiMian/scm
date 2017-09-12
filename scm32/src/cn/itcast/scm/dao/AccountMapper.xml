@@ -8,4 +8,7 @@
     <result column="acc_pass" property="accPass" jdbcType="VARCHAR" />
   </resultMap>
   
+  <select id="login" parameterType="Account" resultMap="accountResultMap">
+  select *from account acc where acc.acc_login=#{accLogin} and acc.acc_pass =#{accPass}
+  </select>
 </mapper>

@@ -1,5 +1,7 @@
 package cn.itcast.scm.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,9 +16,27 @@ public class SupplierServiceImpl implements SupplierService {
 	private SupplierMapper supplierMapper;
 
 	@Override
-	public int insertSupplier(Supplier supplier) throws Exception {
+	public int insert(Supplier supplier) throws Exception {
 		// TODO Auto-generated method stub
-		return supplierMapper.insertSupplier(supplier);
+		return supplierMapper.insert(supplier);
+	}
+
+	@Override
+	public Supplier select(Supplier entity) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int delete(Supplier entity) throws Exception {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<Supplier> selectUseDyc(Supplier entity) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 
